@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### what is middleware in NextJs
 
-## Getting Started
+middleware can be used to directly respond to requests without going through the route handlers.
+middleware is a piece of code that allows you to perform an action before a request is completed and modify the response accordingly. It provides flexibility and controls over the request/response flow.
+middlewares allows you to seamlessly integrate custom login into your request/response pipeline, request/response modifications, modify request headers, implements url redirects, or keep track of incoming and outgoing requests.
 
-First, run the development server:
+one of the major use-case of middleware is authentication, it provides a way to verify user's identity before granting response to your application protected pages.
+Middleware can use used to authorization to implement access controls based on roles and permissions. Lastly they are important for caching. They store the frequently accessed data in a cache preventing subsequent calls to db.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Downsides
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Add complexity to your application
+Latency - middleware code needs to be executed before your application can process the request.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### what are edge functions vs serverless functions
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+When you deploy a serverless function to Vercel, it’s deployed to a server somewhere in the world.
+The request made to that function will then execute where the server is located.
+If a request is made to a server close to that location, it will happen quickly. But, if a request is made to the server from a faraway location, the response will be much slower
 
-## Learn More
+Edge functions are serverless functions that can run geographically close to the user
 
-To learn more about Next.js, take a look at the following resources:
+### What is rendering?
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Rendering minimizes build time. Long build time frustrates users because our websites tends to load data very slowly which might end up with really high server cost and a bad user experience. The solution to this is by using the right rendering patterns and techniques.
+In the course it is also important we have a good understanding of core web vitals.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Core web vitals
 
-## Deploy on Vercel
+TTFB (Time To First Byte) - the time is takes for the client to receive the first byte of the page content
+FCP(First Contentful Paint) -the time is takes for the browser to render the first piece of content after navigation
+LCP(Largest Contentful Paint) -the time is takes to load and render the page's main content
+TTI (Time To Interactive) - The time it takes for the age to starts loading to when it's reliably responding to users input quickly
+CLS (Cumulative Layout Shift) - Measures the visual stability to avoid unexpected layout shift
+FID(First Input Delay) - Time to when the user interacts with the page to the time the event handlers are able to run
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Lists of best developer experience
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Projects with really short build time
+Low server costs
+Dynamic content in a performant way
+
+### what is static rendering
+
+Static rendering is a very performant pattern. With static rendering the entire HTML page gets generated at BUILD TIME. static assets are easily cached by a CDN (Content Delivery Network) or on vercel by the edge networks. So it easy to get fast response because we can just return the cached data from the CDN or edge function on subsequent calls.
+
+### Types of static rendering
+
+Plain Static Rendering -- These are for pure static data (Pure HTML pages)
