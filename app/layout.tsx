@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${outfit.className} font-[400] flex items-center justify-center h-screen max-w-[1300px] mx-auto`}
+        className={`${outfit.className} font-[400] flex justify-center items-center h-screen max-w-[1000px] mx-auto bg-gray-100 overflow-y-scroll`}
       >
         {children}
       </body>

@@ -17,8 +17,25 @@ Latency - middleware code needs to be executed before your application can proce
 When you deploy a serverless function to Vercel, it’s deployed to a server somewhere in the world.
 The request made to that function will then execute where the server is located.
 If a request is made to a server close to that location, it will happen quickly. But, if a request is made to the server from a faraway location, the response will be much slower
+Edge functions are serverless functions that can run geographically close to the user.
 
-Edge functions are serverless functions that can run geographically close to the user
+### Benefits of Serverless Functions
+
+pay for what you use
+Node runtime
+
+### Downsides of serverless function
+
+Long cold boot
+Served data in a Single region
+Difficult cache invalidation
+
+### Benefits of Edge Functions
+
+pay for what you use
+Edge runtime
+Users can serve data from all region
+HTTP streaming
 
 ### What is rendering?
 
@@ -27,9 +44,9 @@ In the course it is also important we have a good understanding of core web vita
 
 ### Core web vitals
 
-TTFB (Time To First Byte) - the time is takes for the client to receive the first byte of the page content
-FCP(First Contentful Paint) -the time is takes for the browser to render the first piece of content after navigation
-LCP(Largest Contentful Paint) -the time is takes to load and render the page's main content
+TTFB (Time To First Byte) - the time is takes for the client to receive the first byte of the page content.
+FCP(First Contentful Paint) -the time is takes for the browser to render the first piece of content after navigation. A good FCP should be less than 1.8s. Anything longer than 3s is considered poor.
+LCP(Largest Contentful Paint) -the time is takes to load and render the page's main content. A good FCP should be less than 2.5s. Anything longer than 4s is considered poor.
 TTI (Time To Interactive) - The time it takes for the age to starts loading to when it's reliably responding to users input quickly
 CLS (Cumulative Layout Shift) - Measures the visual stability to avoid unexpected layout shift
 FID(First Input Delay) - Time to when the user interacts with the page to the time the event handlers are able to run
@@ -44,6 +61,8 @@ Dynamic content in a performant way
 
 Static rendering is a very performant pattern. With static rendering the entire HTML page gets generated at BUILD TIME. static assets are easily cached by a CDN (Content Delivery Network) or on vercel by the edge networks. So it easy to get fast response because we can just return the cached data from the CDN or edge function on subsequent calls.
 
-### Types of static rendering
+For full details about rendering, checkout rendering folder in app
 
-Plain Static Rendering -- These are for pure static data (Pure HTML pages)
+### What is Git rebasing
+
+Rebasing is a process that allows you to move or combine sequence of commits to a new base commit. The primary purpose of rebasing is to create a cleaner project history by integrating changes from one branch into another. . Unlike merging, which combines the histories of two branches, rebasing rewrites the commit history (ChatGPT)

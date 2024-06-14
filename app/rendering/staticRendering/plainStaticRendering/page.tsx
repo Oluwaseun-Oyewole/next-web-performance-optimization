@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const PlainStaticRendering = () => {
   return (
-    <main>
+    <main className="h-[90vh] overflow-y-scroll">
       <header>
         <nav>
           <ul>
@@ -14,9 +14,8 @@ const PlainStaticRendering = () => {
           </ul>
         </nav>
       </header>
-      <section className="font-light">
-        <div>
-          <h1 className="underline">Plain Static Rendering</h1>
+      <section className="font-light py-5">
+        <div className="leading-9">
           <p>
             Plain Static Rendering -- These are for pure static data (Pure HTML
             pages)
@@ -44,6 +43,7 @@ const PlainStaticRendering = () => {
       </section>
       <section className="mt-10">
         <h1>Login Form</h1>
+        <br />
         <form action="">
           <div>
             <label htmlFor="Email">
@@ -52,29 +52,18 @@ const PlainStaticRendering = () => {
                 type="email"
                 name=""
                 id="Email"
-                className="block bg-gray-100 outline-none border-none font-light w-full md:w-[30%] py-3 px-4"
-              />
-            </label>
-          </div>
-
-          <div>
-            <label htmlFor="Password">
-              Password
-              <input
-                type="password"
-                name=""
-                id="Password"
-                className="block bg-gray-100 outline-none border-none font-light w-full md:w-[30%] py-3 px-4"
+                className="block bg-gray-200 outline-none border-none font-light w-full md:w-[30%] py-3 px-4"
               />
             </label>
           </div>
         </form>
-
+        <br />
         <p className="font-light">
           In static rendering the browser renders the HTML and optionally
           requests another javascript bundle to hydrate this components. <br />
           Hydration is just binding event handlers to the HTML in order to make
-          them interactive. e.g like clicking a button
+          them interactive. e.g like clicking a button, typing in an input field
+          etc
         </p>
       </section>
 
@@ -92,6 +81,10 @@ const PlainStaticRendering = () => {
           <li>Reliable uptime</li>
           <li>Scalable Infrastructure</li>
         </ul>
+      </section>
+
+      <section className="my-10">
+        <p>The major disadvantage is that it does not render dynamic data</p>
       </section>
     </main>
   );
