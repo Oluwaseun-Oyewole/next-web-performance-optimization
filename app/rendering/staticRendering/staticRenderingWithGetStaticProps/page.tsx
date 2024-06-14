@@ -1,4 +1,3 @@
-import { NextPage } from "next";
 import Link from "next/link";
 
 interface DataType {
@@ -12,7 +11,7 @@ interface PageProps {
   data: DataType[];
 }
 
-const StaticRenderingWithGetStaticProps: NextPage<PageProps> = ({ data }) => {
+const StaticRenderingWithGetStaticProps = () => {
   return (
     <main className="h-[90vh] overflow-y-scroll font-light">
       <h1 className="font-medium">
@@ -47,13 +46,13 @@ const StaticRenderingWithGetStaticProps: NextPage<PageProps> = ({ data }) => {
         </p>
       </section>
       <h1>Fetched Data</h1>
-      <ul>
+      {/* <ul>
         {data?.map((item) => (
           <li key={item.id}>
             {item?.userId} -- {item?.title}
           </li>
         ))}
-      </ul>
+      </ul> */}
       <p>
         Here there is no loading components because there will never be a
         loading state because the generated HTML already consist of the HTML
