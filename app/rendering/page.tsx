@@ -4,7 +4,13 @@ const Rendering = () => {
   return (
     <main className="font-light pt-20">
       <h1 className="text-4xl pt-20 font-medium">Rendering</h1>
-      <div className="flex my-4">
+
+      <ul className=" text-blue-600 flex items-center gap-3">
+        <li>
+          <Link href="/">Home</Link>
+        </li>
+      </ul>
+      <div className="flex">
         <p>Rendering converts the code you write into user interfaces - - </p>
         <a
           href="https://nextjs.org/docs/app/building-your-application/rendering"
@@ -14,7 +20,7 @@ const Rendering = () => {
         </a>
       </div>
       <section className="mt-10 flex items-start gap-5">
-        <h1>Rendering Patterns in NextJs (Personal note) - - </h1>
+        <h1>Rendering Patterns in NextJs (Personal note)- - </h1>
         <ul className="text-blue-700 underline">
           <li>
             <Link href="/rendering/staticRendering/plainStaticRendering">

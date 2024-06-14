@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main>
       <h1 className="text-3xl underline">Topics</h1>
-      <ul className="p-5 text-blue-600">
+      <ul className=" text-blue-600 flex items-center gap-3">
         <li>
           <Link href="/rendering">Rendering</Link>
         </li>
