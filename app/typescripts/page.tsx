@@ -11,6 +11,9 @@ const TypescriptConcepts = () => {
         <li>
           <Link href="/typescripts/utility">Utility Types</Link>
         </li>
+        <li>
+          <Link href="/typescripts/generics">Typescript Generics</Link>
+        </li>
       </ul>
     </div>
   );

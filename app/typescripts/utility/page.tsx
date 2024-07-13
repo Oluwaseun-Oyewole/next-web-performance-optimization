@@ -1,11 +1,13 @@
 const UtilityTypes = () => {
   return (
     <div>
-      <h1>Common Utility Types in Typescript</h1>
+      <h1 className="pb-2">Common Utility Types in Typescript</h1>
       <section>
         <h1>{`Partial<T>`}</h1>
         <div className="font-[300] text-sm">
-          <p> Partial utility makes all fields optional</p>
+          <p className="text-blue-600 font-medium">
+            Partial utility makes all fields optional
+          </p>
           <div>
             <code>Interface User {`{name:string, id:number}`}</code>
             <br />
@@ -22,7 +24,9 @@ const UtilityTypes = () => {
       <section className="py-2">
         <h1>{`Required<T>`}</h1>
         <div className="font-[300] text-sm">
-          <p> Required utility makes all fields required</p>
+          <p className="text-blue-600 font-medium">
+            Required utility makes all fields required
+          </p>
           <div>
             <code>Interface User {`{name:string, id:number}`}</code>
             <br />
@@ -34,7 +38,9 @@ const UtilityTypes = () => {
       <section>
         <h1>{`Readonly<T>`}</h1>
         <div className="font-[300] text-sm">
-          <p> Readonly utility makes all properties of a type read-only</p>
+          <p className="text-blue-600 font-medium">
+            Readonly utility makes all properties of a type read-only
+          </p>
           <div>
             <code>Interface User {`{name:string, id:number}`}</code>
             <br />
@@ -43,10 +49,10 @@ const UtilityTypes = () => {
         </div>
       </section>
 
-      <section>
+      <section className="py-2">
         <h1>{`Record<T, P>`}</h1>
         <div className="font-[300] text-sm">
-          <p>
+          <p className="text-blue-600 font-medium">
             Record utility type constructs a type with a set of properties K of
             type T
           </p>
@@ -64,7 +70,7 @@ const UtilityTypes = () => {
       <section>
         <h1>{`Pick<T, K>`}</h1>
         <div className="font-[300] text-sm">
-          <p>
+          <p className="text-blue-600 font-medium">
             Readonly utility type constructs a type by picking a set of
             properties K from type T
           </p>
@@ -78,10 +84,10 @@ const UtilityTypes = () => {
         </div>
       </section>
 
-      <section>
+      <section className="py-2">
         <h1>{`Omit<T, K>`}</h1>
         <div className="font-[300] text-sm">
-          <p>
+          <p className="text-blue-600 font-medium">
             Readonly utility type constructs a type by picking a set of
             properties K from type T
           </p>
@@ -97,7 +103,7 @@ const UtilityTypes = () => {
       <section>
         <h1>{`Exclude<T, K>`}</h1>
         <div className="font-[300] text-sm">
-          <p>
+          <p className="text-blue-600 font-medium">
             Exclude utility type constructs a type by excluding from type T all
             properties that are assignable to type K
           </p>
@@ -110,10 +116,10 @@ const UtilityTypes = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="py-2">
         <h1>{`NonNullable<T>`}</h1>
         <div className="font-[300] text-sm">
-          <p>
+          <p className="text-blue-600 font-medium">
             NonNullable utility type constructs a type by excluding null and
             undefined from type T.
           </p>
@@ -127,7 +133,7 @@ const UtilityTypes = () => {
       <section>
         <h1>{`ReturnType<T>`}</h1>
         <div className="font-[300] text-sm">
-          <p>
+          <p className="text-blue-600 font-medium">
             Return utility type constructs a type consisting of the return type
             of function T.
           </p>
@@ -137,10 +143,10 @@ const UtilityTypes = () => {
         </div>
       </section>
 
-      <section>
+      <section className="py-2">
         <h1>{`Parameters<T>`}</h1>
         <div className="font-[300] text-sm">
-          <p>
+          <p className="text-blue-600 font-medium">
             Parameters utility type constructs a tuple type consisting of the
             parameter types of a function type T.
           </p>
