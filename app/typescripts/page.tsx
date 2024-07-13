@@ -8,6 +8,9 @@ const TypescriptConcepts = () => {
         <li>
           <Link href="/typescripts/interface">Interface</Link>
         </li>
+        <li>
+          <Link href="/typescripts/utility">Utility Types</Link>
+        </li>
       </ul>
     </div>
   );

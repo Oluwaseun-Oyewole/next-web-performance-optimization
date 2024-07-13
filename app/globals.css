@@ -5,3 +5,8 @@
 ul > li {
   line-height: 2.2;
 }
+
+::-webkit-scrollbar {
+  background: transparent !important;
+  width: 0px !important;
+}

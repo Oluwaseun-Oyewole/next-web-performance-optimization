@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Rendering = () => {
   return (
-    <main className="font-light pt-20">
+    <main className="font-light">
       <h1 className="text-2xl font-bold text-blue-500 py-4">Rendering</h1>
 
       <div className="text-sm">
