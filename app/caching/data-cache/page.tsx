@@ -52,7 +52,6 @@ const DataCache = () => {
           Time Based Revalidation - invalidate after a certain amount of time
           and a new request has been made{" "}
           <b className="block">
-            {" "}
             {`fetch('https:...', { next: { revalidate: 3600 } })`}
           </b>
         </p>

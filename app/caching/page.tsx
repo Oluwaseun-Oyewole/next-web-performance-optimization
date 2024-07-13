@@ -8,7 +8,7 @@ const Caching = () => {
         NextJs statically render your routes and cache your data request by
         default
       </p>
-      <ul className=" text-blue-600 pt-">
+      <ul className=" text-blue-600">
         <li>
           <Link href="/caching/request">Request Memoization</Link>
         </li>

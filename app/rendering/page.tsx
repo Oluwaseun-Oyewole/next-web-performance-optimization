@@ -3,25 +3,22 @@ import Link from "next/link";
 const Rendering = () => {
   return (
     <main className="font-light pt-20">
-      <h1 className="text-4xl pt-20 font-medium">Rendering</h1>
+      <h1 className="text-2xl font-bold text-blue-500 py-4">Rendering</h1>
 
-      <ul className=" text-blue-600 flex items-center gap-3">
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-      </ul>
-      <div className="flex">
-        <p>Rendering converts the code you write into user interfaces - - </p>
-        <a
-          href="https://nextjs.org/docs/app/building-your-application/rendering"
-          className="text-blue-700"
-        >
-          Rendering
-        </a>
+      <div className="text-sm">
+        <p>Rendering converts the code you write into user interfaces </p>
+        <span>
+          <a
+            href="https://nextjs.org/docs/app/building-your-application/rendering"
+            className="text-blue-700"
+          >
+            Rendering
+          </a>
+        </span>
       </div>
-      <section className="mt-10 flex items-start gap-5">
-        <h1>Rendering Patterns in NextJs (Personal note)- - </h1>
-        <ul className="text-blue-700 underline">
+      <section className="mt-5">
+        <h1>Rendering Patterns in NextJs (Personal note)</h1>
+        <ul className="text-blue-700 underline text-sm">
           <li>
             <Link href="/rendering/staticRendering/plainStaticRendering">
               Plain Static Rendering
@@ -43,9 +40,9 @@ const Rendering = () => {
         </ul>
       </section>
 
-      <section className="mt-10 flex items-start gap-5">
-        <h1>Videos - - </h1>
-        <ul className="text-blue-700 underline">
+      <section className="mt-5">
+        <h1>Videos</h1>
+        <ul className="text-blue-700 underline text-sm">
           <li>
             <Link href="https://www.youtube.com/watch?v=PN1HgvAOmi8">
               Advanced Rendering Patterns: Lydia Hallie
@@ -58,9 +55,9 @@ const Rendering = () => {
           </li>
         </ul>
       </section>
-      <section className="mt-10 flex items-start gap-5">
-        <h1>Resources - - </h1>
-        <ul className="text-blue-700 underline">
+      <section className="mt-5">
+        <h1>Resources</h1>
+        <ul className="text-blue-700 underline text-sm">
           <li>
             <Link href="https://cleverzone.medium.com/demystifying-rending-ssr-csr-ssg-isr-of-next-50d9ba368cae">
               Demystifying rendering of NextJS
@@ -78,9 +75,9 @@ const Rendering = () => {
           </li>
         </ul>
       </section>
-      <section className="my-10 flex items-start gap-5">
+      <section className="my-5">
         <h1>Keywords </h1>
-        <ul>
+        <ul className="text-sm">
           <li className="text-gray-800">
             <span className="text-blue-600"> TTFB (Time To First Byte)</span> -
             the time is takes for the client to receive the first byte of the

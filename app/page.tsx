@@ -19,6 +19,9 @@ export default function Home() {
         <li>
           <Link href="/fetching">Data Fetching</Link>
         </li>
+        <li>
+          <Link href="/typescripts">Typescript</Link>
+        </li>
       </ul>
     </main>
   );
