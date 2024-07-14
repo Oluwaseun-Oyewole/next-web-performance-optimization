@@ -11,6 +11,10 @@ const DataFetching = () => {
             Data Fetching, Caching and Revalidation
           </Link>
         </li>
+
+        <li>
+          <Link href="/fetching/patterns">Data fetching patterns</Link>
+        </li>
       </ul>
     </div>
   );

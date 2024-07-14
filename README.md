@@ -39,17 +39,11 @@ HTTP streaming
 
 ### What is rendering?
 
-Rendering minimizes build time. Long build time frustrates users because our websites tends to load data very slowly which might end up with really high server cost and a bad user experience. The solution to this is by using the right rendering patterns and techniques.
-In the course it is also important we have a good understanding of core web vitals.
+##### Rendering minimizes build time. Long build time frustrates users because our websites tends to load data very slowly which might end up with really high server cost and a bad user experience. The solution to this is by using the right rendering patterns and techniques. In the course it is also important we have a good understanding of core web vitals.
 
 ### Core web vitals
 
-TTFB (Time To First Byte) - the time is takes for the client to receive the first byte of the page content.
-FCP(First Contentful Paint) -the time is takes for the browser to render the first piece of content after navigation. A good FCP should be less than 1.8s. Anything longer than 3s is considered poor.
-LCP(Largest Contentful Paint) -the time is takes to load and render the page's main content. A good FCP should be less than 2.5s. Anything longer than 4s is considered poor.
-TTI (Time To Interactive) - The time it takes for the age to starts loading to when it's reliably responding to users input quickly
-CLS (Cumulative Layout Shift) - Measures the visual stability to avoid unexpected layout shift
-FID(First Input Delay) - Time to when the user interacts with the page to the time the event handlers are able to run
+##### TTFB (Time To First Byte) - the time is takes for the client to receive the first byte of the page content. FCP(First Contentful Paint) -the time is takes for the browser to render the first piece of content after navigation. A good FCP should be less than 1.8s. Anything longer than 3s is considered poor. LCP(Largest Contentful Paint) -the time is takes to load and render the page's main content. A good FCP should be less than 2.5s. Anything longer than 4s is considered poor. TTI (Time To Interactive) - The time it takes for the age to starts loading to when it's reliably responding to users input quickly CLS (Cumulative Layout Shift) - Measures the visual stability to avoid unexpected layout shift FID(First Input Delay) - Time to when the user interacts with the page to the time the event handlers are able to run
 
 ### Lists of best developer experience
 
@@ -59,10 +53,4 @@ Dynamic content in a performant way
 
 ### what is static rendering
 
-Static rendering is a very performant pattern. With static rendering the entire HTML page gets generated at BUILD TIME. static assets are easily cached by a CDN (Content Delivery Network) or on vercel by the edge networks. So it easy to get fast response because we can just return the cached data from the CDN or edge function on subsequent calls.
-
-For full details about rendering, checkout rendering folder in app
-
-### What is Git rebasing
-
-Rebasing is a process that allows you to move or combine sequence of commits to a new base commit. The primary purpose of rebasing is to create a cleaner project history by integrating changes from one branch into another. . Unlike merging, which combines the histories of two branches, rebasing rewrites the commit history (ChatGPT)
+##### Static rendering is a very performant pattern. With static rendering the entire HTML page gets generated at BUILD TIME. static assets are easily cached by a CDN (Content Delivery Network) or on vercel by the edge networks. So it easy to get fast response because we can just return the cached data from the CDN or edge function on subsequent calls.For full details about rendering, checkout rendering folder in app
